@@ -8,8 +8,8 @@ public class SalaDeCine {
 	public SalaDeCine(Integer filas, Integer columnas) {
 		this.butacas = new Butaca[filas][columnas];
 
-		for (int i = 0; i <= filas; i++) {
-			for (int j = 0; j <= columnas; j++) {
+		for (int i = 0; i < filas; i++) {
+			for (int j = 0; j < columnas; j++) {
 				this.butacas[i][j] = new Butaca();
 			}
 		}
@@ -32,7 +32,6 @@ public class SalaDeCine {
 			return false;
 		if (pelicula.puedeVerla(edad))
 			return false;
-
 		this.butacas[fila][columna].ocupar();
 		return this.butacas[fila][columna].getEstadoButaca();
 	}

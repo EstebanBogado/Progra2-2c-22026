@@ -17,6 +17,10 @@ public class Pelicula {
 	}
 
 	public Boolean puedeVerla(Integer edad) {
-		return edad <= this.edadMinima;
+		return edad < this.edadMinima;
+	}
+
+	public Integer getEdadMinima() {
+		return this.edadMinima;
 	}
 }
