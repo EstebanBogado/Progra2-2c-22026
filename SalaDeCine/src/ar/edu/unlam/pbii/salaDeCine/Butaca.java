@@ -9,7 +9,7 @@ public class Butaca {
 
 	@Override
 	public String toString() {
-		return this.getEstadoButaca()? "X" : "O";
+		return this.getEstadoButaca() ? "X" : "O";
 	}
 
 	public Boolean getEstadoButaca() {
@@ -20,4 +20,5 @@ public class Butaca {
 		// TODO Auto-generated method stub
 		this.ocupada = true;
 	}
+
 }

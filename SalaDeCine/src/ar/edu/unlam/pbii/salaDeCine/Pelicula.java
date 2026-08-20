@@ -20,6 +20,22 @@ public class Pelicula {
 		return edad < this.edadMinima;
 	}
 
+	public String getTitulo() {
+		return titulo;
+	}
+
+	public Genero getGenero() {
+		return genero;
+	}
+
+	public Integer getDuracion() {
+		return duracion;
+	}
+
+	public String getSinopsis() {
+		return sinopsis;
+	}
+
 	public Integer getEdadMinima() {
 		return this.edadMinima;
 	}
