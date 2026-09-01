@@ -69,4 +69,12 @@ class Test {
 		sala1.devolverBoleto(6, 3);
 		assertEquals(28, sala1.butacasDisponibles());
 	}
+
+	@org.junit.jupiter.api.Test
+	void crearUnaPeliculaYAgregarleLaSinopsis() {
+		Pelicula starWars = new Pelicula("Star Wars: el regreso del jedi", 120, 16, Tipo.CIENCIA_FICCION);
+		starWars.setSinopsis("Pelicula de ciencia ficción y fantasía!!!");
+		assertNotNull(starWars.getSinopsis());
+		System.out.println("Sinopsis: " + starWars.getSinopsis());
+	}
 }
