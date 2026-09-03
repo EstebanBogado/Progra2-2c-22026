@@ -18,4 +18,8 @@ public abstract class Vehiculo {
 	public abstract Integer cantPaquetes();
 
 	public abstract void listarPaquetes();
+
+	public abstract void setDestinoInicial(String destino);
+
+	public abstract Boolean validarDestino(Paquete paquete);
 }

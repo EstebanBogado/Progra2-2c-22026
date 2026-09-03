@@ -59,12 +59,14 @@ public class Bicicleta extends Vehiculo {
 		}
 	}
 
+	@Override
 	public void setDestinoInicial(String destino) {
 		if (this.destinoInicial == null) {
 			this.destinoInicial = destino;
 		}
 	}
 
+	@Override
 	public Boolean validarDestino(Paquete paquete) {
 		return paquete.getDestino().equalsIgnoreCase(this.destinoInicial);
 	}

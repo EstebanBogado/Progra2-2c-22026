@@ -5,6 +5,11 @@ public class Paquete {
 	private Double volumen;
 	private String destino;
 
+	public Paquete(Double peso, Double volumen) {
+		this.peso = peso;
+		this.volumen = volumen;
+	}
+
 	public Paquete(Double peso, Double volumen, String destino) {
 		this.peso = peso;
 		this.volumen = volumen;
@@ -22,6 +27,10 @@ public class Paquete {
 	@Override
 	public String toString() {
 		return "[peso= " + peso + "kg" + ", volumen= " + volumen + "m³" + "destino= " + destino.toUpperCase() + "]";
+	}
+
+	public void setDestino(String destino) {
+		this.destino = destino;
 	}
 
 	public String getDestino() {
